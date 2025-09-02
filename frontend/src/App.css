@@ -1,0 +1,66 @@
+/**
+ * App.css
+ */
+
+/* General Styles */
+body {
+    background-color: #2c2f33; /* Dark background */
+    color: #fff; /* Light text */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #23272a; /* Dark sidebar */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.sidebar-header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Message Styles */
+.message {
+    background-color: #3b3f43; /* Message bubble background */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 70%;
+    position: relative;
+}
+
+.message.user {
+    background-color: #7289da; /* User message color */
+    align-self: flex-end; /* Align to the right */
+}
+
+.message.admin {
+    background-color: #f04747; /* Admin message color */
+    align-self: flex-start; /* Align to the left */
+}
+
+.message .avatar {
+    border-radius: 50%; /* Circular avatar */
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .message {
+        max-width: 90%; /* Adjust message width for smaller screens */
+    }
+}
