@@ -1,0 +1,84 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2f3136;
+  color: white;
+}
+
+.header {
+  padding: 10px;
+  background-color: #202225;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #40444b;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #202225;
+  border-right: 1px solid #40444b;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar-item:hover {
+  background-color: #40444b;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.message-bubble {
+  background-color: #3f414e;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  position: relative;
+}
+
+.message-bubble.user {
+  align-self: flex-end;
+  background-color: #7289da;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #202225;
+  display: flex;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #40444b;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
